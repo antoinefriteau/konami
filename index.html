@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Here's a test page for Konami code</title>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="jquery.konami.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Konami code : </h1>
+            <p>&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; B A</p>
+        </div>
+
+        <script type="text/javascript">
+            (function($) {
+
+                $(function() {
+                    $(window).konami({
+                        reveal: function() {
+                            alert('Konami Code activated !');
+                        }
+                    });
+                });
+
+            }(jQuery));
+        </script>
+    </body>
+</html>
