@@ -6,22 +6,22 @@
 
     $.fn.konami = function( options ) {
 
-        var opts, konamiCode, controllerCode;
+        var opts, konamiCode, keys;
 
         var opts = $.extend({}, $.fn.konami.defaults, options); // extends options
 
         return this.each(function() {
 
-            konamiCode      = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-            controllerCode  = [];
+            konamiCode  = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+            keys        = [];
 
             $( window ).keyup(function( evt ) {
 
-                controllerCode.push( evt.keyCode ? evt.keyCode : evt.which );
+                keys.push( evt.keyCode ? evt.keyCode : evt.which );
 
-                if( controllerCode.toString().indexOf( konamiCode ) >= 0 ) {
+                if( keys.toString().indexOf( konamiCode ) >= 0 ) {
                     opts.reveal();
-                    controllerCode = [];
+                    keys = [];
                 }
 
             });
