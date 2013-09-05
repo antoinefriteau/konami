@@ -1,5 +1,10 @@
-/*! Konami v1.0.1 | (c) 2013 Antoine FRITEAU | antoinfriteau.fr/licenses
-*/
+/*!
+ * Konami v1.0.1
+ * https://github.com/antoinefriteau/konami
+ * MIT licensed
+ *
+ * Copyright (c) 2013 Antoine FRITEAU, antoinfriteau.fr
+ */
 
 (function( $ ) {
     "use strict";
